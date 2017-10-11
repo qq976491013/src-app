@@ -1,0 +1,248 @@
+@charset "utf-8";
+.h-content {
+    background: #fff;
+}
+
+.h-banner {
+    width: 100%;
+    >img {
+        width: 100%;
+    }
+}
+
+.h-nav {
+    width: 100%;
+    border-bottom: 0.05rem solid #eee;
+    li {
+        width: 100%;
+        display: flex;
+        a {
+            display: block;
+            flex: 1;
+            >img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.h-list1 {
+    width: 100%;
+    .h-list-1 {
+        width: 100%;
+        padding: 0.2rem;
+        border-bottom: 0.05rem solid #eee;
+        >div {
+            width: 100%;
+            h4 {
+                color: #000;
+                font-size: 0.18rem !important;
+            }
+            p {
+                color: #999999;
+                font-size: 0.15rem;
+                margin-top: 0.05rem;
+            }
+            >ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0.1rem;
+                li {
+                    width: 30.5%;
+                    >img {
+                        width: 100%;
+                    }
+                }
+            }
+            >div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                >div {
+                    display: flex;
+                    color: #898989;
+                    >p {
+                        display: flex;
+                        align-items: center;
+                        >img {
+                            width: 0.2rem;
+                        }
+                        span {
+                            font-size: 0.16rem;
+                            color: #898989;
+                            padding-left: 0.05rem;
+                        }
+                    }
+                    >p:nth-of-type(2) {
+                        padding-left: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.h-d {
+    position: fixed;
+    right: 0.2rem;
+    bottom: 0.6rem;
+    width: 1rem;
+    >img {
+        width: 100%;
+    }
+}
+
+//论坛-电话手表
+.nav-watch {
+    width: 100%;
+    >.h-wacth {
+        width: 100%;
+        >img {
+            width: 100%;
+        }
+    }
+    >.forum-nav {
+        width: 100%;
+        height: 0.45rem;
+        line-height: 0.45rem;
+        display: flex;
+        margin-top: -0.05rem;
+        background: #fff;
+        li {
+            flex: 1;
+            text-align: center;
+            border-bottom: 0.01rem solid #FF7800;
+            a {
+                display: block;
+                width: 100%;
+                color: #000;
+                font-size: 0.2rem;
+                text-decoration: none;
+                animation: h-head 0.2s linear;
+            }
+            .router-link-active {
+                background: #FF7800;
+                color: #fff;
+                animation: h-show 0.2s linear;
+            }
+        }
+        .nav-l {
+            border-top-right-radius: 0.05rem;
+        }
+        .nav-r {
+            border-top-left-radius: 0.05rem;
+        }
+    }
+}
+
+@-webkit-keyframes h-show {
+    0% {
+        background: white;
+        color: #292929;
+        opacity: .4;
+    }
+    100% {
+        background: #FF7800;
+        color: white;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes h-head {
+    0% {
+        background: #FF7800;
+        color: white;
+        opacity: .4;
+    }
+    100% {
+        background: white;
+        color: #292929;
+        opacity: 1;
+    }
+}
+
+.all {
+    width: 100%;
+    li {
+        width: 100%;
+        padding: 0.2rem;
+        border-bottom: 0.05rem solid #eee;
+        >div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .all-top {
+            width: 100%;
+            .all-img {
+                width: 40%;
+                text-align: center;
+                >div {
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    margin: 0 auto;
+                    >img{
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+                >p {
+                    color: #8F8F8F;
+                    padding-top: 0.05rem;
+                    font-size: 0.15rem;
+                }
+            }
+            .all-font {
+                width: 60%;
+                display: flex;
+                >i {
+                    display: block;
+                    width: 0.18rem;
+                    height: 0.21rem;
+                    background: url(../../img/h-img/up.png) no-repeat;
+                    background-size: 100% 100%;
+                }
+                >p {
+                    color: #000;
+                    font-size: 0.18rem;
+                    padding-left: 0.05rem;
+                }
+            }
+        }
+        .all-bot {
+            padding:0.15rem 0 0 0.35rem;
+            p {
+                font-size: 0.15rem;
+                color: #8F8F8F;
+                display: flex;
+                align-items: center;
+                &:nth-child(2) {
+                    >i {
+                        display: block;
+                        width: 0.25rem;
+                        height: 0.15rem;
+                        background: url(../../img/h-img/icon-view.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    span{
+                        padding-left: 0.05rem;
+                    }
+                }
+                &:nth-child(3) {
+                    >i {
+                        display: block;
+                        width: 0.20rem;
+                        height: 0.20rem;
+                        background: url(../../img/h-img/icon-comment.png) no-repeat;
+                        background-size: 100% 100%;
+                    }
+                    span{
+                        padding-left: 0.05rem;
+                    }
+                }
+            }
+        }
+    }
+}

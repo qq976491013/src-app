@@ -1,0 +1,39 @@
+#s_image-nav{
+    width:100%;
+    img{
+        width:100%;
+    }
+}
+.s_tab{
+    width:100%;
+    background: white;
+    .s_tab-top{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        li{
+            width:33.33%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    .s_tab-bottom{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        li{
+            width:33.33%;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+#s_image-foo{
+    width:100%;
+    img{
+        width:100%;
+    }
+}
+
